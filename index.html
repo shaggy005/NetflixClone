@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>netflix copy</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      /* TODO: maybe use something nicer later */
+    }
+    .poster {
+      background: #222;
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- nav, kinda close to netflix -->
+  <nav class="flex items-center justify-between px-10 py-3" style="background-color: rgba(0,0,0,0.7)">
+    <div class="text-red-600 text-2xl font-bold tracking-wider">NETFLIX</div>
+
+    <ul class="hidden md:flex gap-5 text-sm">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">TV Shows</a></li>
+      <li><a href="#">Movies</a></li>
+      <li><a href="#">New & Popular</a></li>
+    </ul>
+
+    <input class="bg-gray-800 px-2 py-1 text-sm" style="border-radius: 2px" placeholder="Search">
+  </nav>
+
+
+  <!-- main hero (placeholder image later) -->
+  <header class="h-[55vh] bg-gray-900 flex flex-col justify-end p-8">
+
+    <h1 class="text-4xl font-bold mb-2">Featured Movie (placeholder)</h1>
+    <p class="text-gray-300 text-sm mb-4 w-2/3">
+      short description about the movie. this will eventually be replaced with real text.
+    </p>
+
+    <div class="flex gap-3">
+      <button class="bg-white text-black px-5 py-1.5 font-semibold" style="border-radius: 3px">Play</button>
+      <button class="bg-gray-700 px-5 py-1.5" style="border-radius: 3px">More Info</button>
+    </div>
+
+  </header>
+
+
+
+  <!-- movie blocks -->
+  <main class="px-10 py-8">
+
+    <!-- section 1 -->
+    <section class="mb-10">
+      <h2 class="text-xl mb-3">Popular</h2>
+      <div class="flex gap-4 overflow-x-auto pb-1">
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+      </div>
+    </section>
+
+
+    <!-- section 2 -->
+    <section class="mb-10">
+      <h2 class="text-xl mb-3">Trending Now</h2>
+      <div class="flex gap-4 overflow-x-auto pb-1">
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+      </div>
+    </section>
+
+    <!-- TODO: maybe add more categories later -->
+
+    <section>
+      <h2 class="text-xl mb-3">New Releases</h2>
+      <div class="flex gap-4 overflow-x-auto pb-1">
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+        <div class="poster w-36 h-52 rounded"></div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- footer, whatever -->
+  <footer class="text-center text-gray-500 text-xs py-8">
+    © 2025 notnetflix
+  </footer>
+
+</body>
+</html>
